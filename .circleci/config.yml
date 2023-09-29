@@ -9,4 +9,5 @@ jobs:
       - run:
           name: Build application Docker image
           command: |
+            wget https://raw.githubusercontent.com/rnode08/ci/main/Dockerfile
             docker build -t app .
